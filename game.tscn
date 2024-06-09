@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=3 uid="uid://brgvspayeodoa"]
+
+[ext_resource type="PackedScene" uid="uid://cuewexf7imypi" path="res://player.tscn" id="1_peekp"]
+[ext_resource type="PackedScene" uid="uid://cy53qg66b0bo0" path="res://pine_tree.tscn" id="2_bci8c"]
+[ext_resource type="PackedScene" uid="uid://cwafmltbunb58" path="res://enemy_1.tscn" id="2_mqwnr"]
+[ext_resource type="PackedScene" uid="uid://c4g5wvm7bq1v0" path="res://wall.tscn" id="4_wge0r"]
+
+[node name="Game" type="Node2D"]
+y_sort_enabled = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -5
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_right = 1165.0
+offset_bottom = 667.0
+
+[node name="Player" parent="." instance=ExtResource("1_peekp")]
+position = Vector2(582, 317)
+scale = Vector2(0.5, 0.5)
+
+[node name="Enemy1" parent="." instance=ExtResource("2_mqwnr")]
+position = Vector2(316, 244)
+
+[node name="PineTree" parent="." instance=ExtResource("2_bci8c")]
+position = Vector2(193, 189)
+
+[node name="PineTree2" parent="." instance=ExtResource("2_bci8c")]
+position = Vector2(344, 508)
+
+[node name="PineTree3" parent="." instance=ExtResource("2_bci8c")]
+position = Vector2(818, 191)
+
+[node name="PineTree4" parent="." instance=ExtResource("2_bci8c")]
+position = Vector2(948, 185)
+
+[node name="PineTree5" parent="." instance=ExtResource("2_bci8c")]
+position = Vector2(888, 249)
+
+[node name="PineTree6" parent="." instance=ExtResource("2_bci8c")]
+position = Vector2(820, 476)
+
+[node name="Wall3" parent="." instance=ExtResource("4_wge0r")]
+position = Vector2(54, 675)
+scale = Vector2(6, 1)
+
+[node name="Wall2" parent="." instance=ExtResource("4_wge0r")]
+position = Vector2(1112, -10)
+rotation = -3.14159
+scale = Vector2(6, 1)
+
+[node name="Wall4" parent="." instance=ExtResource("4_wge0r")]
+position = Vector2(1175, 5.00002)
+rotation = 1.5708
+scale = Vector2(4, 1)
+
+[node name="Wall" parent="." instance=ExtResource("4_wge0r")]
+position = Vector2(-10, 10)
+rotation = 1.5708
+scale = Vector2(4, 1)
